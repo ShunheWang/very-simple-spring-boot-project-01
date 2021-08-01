@@ -25,6 +25,7 @@ public class StudentControl {
     @PostMapping
     public void createStudent(@RequestBody Student student) throws Exception {
         studentService.addNewStudent(student);
+
     }
 
     @DeleteMapping(path = "{studentId}")
